@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <title>To-Do list made by Jake Vo</title>
+</head>
+<body>
+	<div class="container">
+		<hr/>
+		<div class="row">
+			<div class="col-md-6">
+				<h1>To-Do List</h1>
+				<hr/>
+				<form method="post" name="toDoList">
+					<div class="form-group"> 
+						<label><strong>Task Name:</strong></label>
+						<input type="text"class="form-control" id="task" required placeholder="eg. Buy Milk">
+					</div>
+					<div class="form-group"> 
+						<label><strong>Deadline:</strong></label>
+						<input type="date"class="form-control" id="deadline" required placeholder="eg. 07/04/2017">
+					</div>
+					<button class="btn btn-primary addValue" type="submit" value="submit">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h1>Task</h1>
+				<div>
+					<ul id="List" class="list-group">
+          <!-- Task Object li.list-group-item.task will be added here by js -->
+          				
+        			</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- Include Firebase Library -->
+	<script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+	<!-- Contacts Store JavaScript -->
+	<script src="script.js"></script>
+</body>	
+</html>
